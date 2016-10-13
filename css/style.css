@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    background: whitesmoke;
+}
 .wrapper {
     margin: 100px;
 }
@@ -12,33 +14,42 @@
     list-style: none;
     line-height: 30px;
     display: flex;
-    flex-direction: column;  
-    width: 200px;
-    background: grey;
+    flex-direction: column;
+    margin-left: 374px;
+    margin-top: 10px;
+    width: 244px;
+    background: wheat;
     border-radius: 8px;
 }
 
 .wrapper li {
-    color: white;
+    color: dimgrey;
     padding-left: 10px;
     cursor: pointer;
     display: flex;
-
 }
 
 
 .wrapper h3 {
     color: #1f6787;
     font-family: Arial, sans-serif;
+    text-align: center;
 }
 
 .controlls {
     margin-top: 10px;
+    text-align: center;
 }
 
 .controlls input {
-    width: 150px;
-    height: 20px;
+    width: 250px;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid grey;
+}
+.controlls input::-webkit-input-placeholder{
+    padding-left: 20px;
+    font-size: 12px;
 }
 
 .controlls button {
@@ -53,4 +64,8 @@
 li input {
     width: 60px;
     visibility: visible;
+    border-radius: 4px;
+}
+li input::-webkit-input-placeholder{
+    padding-left: 5px;
 }

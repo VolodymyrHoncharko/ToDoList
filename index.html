@@ -10,11 +10,11 @@
 <body>
 <script type="text/template" id="wrapper-template">
     <div class="wrapper">
-        <h3>Tech Skills:</h3>
+        <h3>ToDoList</h3>
         <ul class="item-list"></ul>
         <div class="controlls">
-            <input type="text" class="item-val">
-            <button class="item-add">Add skill</button>
+            <input type="text" class="item-val" placeholder="add task">
+            <button class="item-add">Add</button>
         </div>
     </div>
 </script>
@@ -25,7 +25,7 @@
         <span data-item="<%= data[i] %>" class="item-del">&#10060;</span>
         <%= (i+1) %>.
         <div class="activeTask"> <%= data[i] %>
-            <input data-main="<%= data[i] %>" class="item-edit" type="text" value="">
+            <input data-main="<%= data[i] %>" class="item-edit" type="text" value="" placeholder="rename">
         </div>
         <div>&#10003;</div>
     </li>

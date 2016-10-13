@@ -22,7 +22,7 @@ require (
         'controller'
     ],
     function($, tmpl, Model, View, Controller){
-        let firstOpt = ['HTML5', 'CSS3', 'JavaScript', 'jQuery', 'JSON'];
+        let firstOpt = [];
         let model = new Model(firstOpt);
         let view = new View(model);
         let controller = new Controller(model, view);
